@@ -1,0 +1,47 @@
+/* external Styling */
+
+/* Element selectors := p  h1  footer  */
+h1{
+    font-size: smaller;
+    text-align: center;
+    
+}
+
+footer{
+    text-align: center;
+    padding-top: 100px;
+}
+article{
+    text-transform: capitalize;
+}
+div{
+    text-shadow: 2px 3px 6px rgb(27, 25, 25);
+}
+
+
+
+/* id selectors (use # symbol along with id_name)  */
+
+#my_intro{
+    color: rgb(14, 146, 217);
+    background-color: rgb(189, 193, 188);
+}
+
+#greet{
+    text-decoration: overline;
+}
+
+
+
+/* class selectors (Use . dot along with class name) */
+
+.skills{
+   text-indent: 100px;
+   font-family: monospace;
+}
+
+/* group selectors(styling elements at a time by grouping) */
+
+h2,h3,footer p{
+    color: crimson;
+}

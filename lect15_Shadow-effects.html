@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Tutorialis all about CSS Shadow Effects</title>
+
+    <style>
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* inset means shadow becoms drawn inside the borders */
+            box-shadow: inset 10px 5px 5px 2px rgb(134, 135, 131);
+        }
+        .box{
+            background-color: rgb(137, 231, 200);
+            width: 450px;
+            height: 350px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 15px;
+
+            box-shadow: 15px 5px 5px 2px rgb(94, 92, 92);
+            
+        }
+        img{
+            box-shadow: 10px 5px 10px 2px rgb(149, 118, 140);
+
+            /* we can also add multiple shadows by comma seoearted */
+            /* box-shadow: 15px 5px 5px 2px rgb(94, 92, 92),15px 5px 5px 2px rgb(119, 7, 7);; */
+        }
+        h2{
+            /* text-shadow: 2px 2px 2px gold; */
+            text-shadow: rgb(255, 205, 4) 10px 3px 1px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="KLS LOGO.jfif" alt="logo" height="150px" >
+            <h2>World to the website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus a ipsum quam deleniti repellat dolore voluptas. Placeat quae aut autem incidunt repudiandae. Odit corrupti dignissimos eveniet, ex minima possimus, iste modi cum rem facilis ducimus eos expedita fugit soluta commodi dolorum fugiat. Nulla voluptatum veniam a eos enim quisquam mollitia?</p>
+
+        </div>
+
+    </div>
+
+    
+</body>
+
+</html>

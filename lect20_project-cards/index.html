@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Project</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            min-height: fit-content;
+            background: #5C258D;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #0a4d65, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            width: 250px;
+            height: 400px;
+            background-color: whitesmoke;
+            border-radius: 25px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .card img{
+            height: 50%;
+            width: 100%;
+           
+            position: relative;
+        }
+        .card h4 {
+            font-weight: bolder;
+            font-size: large;
+            display: flex;
+           padding-top: 30px;
+           color: #031302;
+           position: relative;
+           
+         
+            justify-content: space-evenly;
+            
+            
+           
+
+        }
+        .card p{
+            position: relative;
+            margin-top: 23px;
+            justify-content: space-evenly;
+            font-size: smaller;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="Scanme.png" alt="qrcode" >
+
+            <h4>One Platform To Pay anytime</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam fuga quia iste deleniti beatae totam, at quasi reprehenderit sint, laboriosam iusto tenetur eum blanditiis mollitia non aspernatur explicabo magnam.</p>
+           
+        </div>
+
+    </div>
+
+    
+</body>
+
+</html>

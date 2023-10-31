@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This tutorial is all about flexbox </title>
+
+    <style>
+        .container{
+            background-color: antiquewhite;
+            border: 2px solid brown;
+            height: 500px;
+           
+            display: flex;
+            overflow:auto ;
+            flex-wrap: wrap;
+            /* flex-direction:  column; */
+            /* flex-direction: row-reverse; */
+            margin: 2px;
+            padding: 3px;
+           
+
+            /* justify -content */
+            /* justify-content: space-between;   content will be justified wrt main horizontal axis */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            justify-content: start;
+            /* align items wrt cross axis */
+            align-items: start;
+            /* align-items: start; */
+            align-content: start;
+            
+            
+            
+        }
+        .box{
+            width: 100px;
+            height: 200px;
+            position: relative;
+            margin: 3px;
+            padding: 1em;
+            overflow: hidden;
+           
+            border: 2px solid rgb(18, 17, 13);
+        }
+
+        #box1{
+            background-color: aqua;
+            order: 6;
+        }
+        #box2{
+                background-color: red;
+                order: ;
+
+        }
+        #box3{
+            background-color: rgb(122, 122, 196);
+
+        }
+        #box4{
+            background-color: chartreuse;
+
+        }
+        #box5{
+            background-color: rgb(234, 17, 150);
+            flex-shrink: 5;
+           
+          
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"   id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est provident autem eligendi obcaecati facilis minima. Excepturi maxime itaque illum ex veritatis voluptatum quaerat, quos saepe debitis sequi harum rerum nesciunt at enim, dolorem architecto doloribus beatae fugiat suscipit nisi quo eveniet cumque natus. Distinctio, maiores libero officiis deserunt illo maxime.</div>
+        <div class="box"  id="box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatibus facere saepe, neque ab veniam. Alias aut nulla, facilis, omnis placeat itaque quidem quo exercitationem fuga explicabo id possimus similique quisquam. Ex temporibus recusandae at optio debitis, mollitia similique minima veniam sit a? Culpa voluptatibus veritatis totam suscipit in aliquid?</div>
+        <div class="box"  id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum saepe labore perspiciatis enim ducimus deserunt explicabo iusto iure, a, eveniet mollitia similique iste tempore cumque maiores, soluta libero nihil ut harum dolorum laborum. Ut eveniet repellendus tempore incidunt esse perferendis quasi explicabo cum doloremque similique. Magnam fuga earum pariatur!</div>
+        <div class="box"  id="box4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae praesentium aspernatur optio! Maiores quod provident, possimus perspiciatis, excepturi nobis facere ut expedita, perferendis eius esse. Officiis sequi sapiente corrupti, laboriosam voluptas mollitia magnam earum facere quaerat cumque excepturi officia ea illum alias cupiditate sit consectetur?</div>
+        <div class="box"  id="box5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae praesentium aspernatur optio! Maiores quod provident, possimus perspiciatis, excepturi nobis facere ut expedita, perferendis eius esse. Officiis sequi sapiente corrupti, laboriosam voluptas mollitia magnam earum facere quaerat cumque excepturi officia ea illum alias cupiditate sit consectetur?</div>
+
+    </div>
+
+    
+</body>
+</html>

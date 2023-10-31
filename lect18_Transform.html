@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Tutorial is all about CSS Transform properties</title>
+    
+    <style>
+    .box1{
+  border: solid red;
+  background-color: aqua;
+  position: relative;
+
+  /* transform: translateX(50px);
+  transform: translateY(50px);
+  transform: rotate(120deg); */
+  /* This is also done by */
+
+
+  
+
+  transform: translate(50px, 50px) rotate(120deg);
+
+  width: 140px;
+  height: 60px;
+  }
+  .box2 {
+  border: solid rgb(0, 42, 255);
+  background-color: rgb(255, 0, 0);
+  margin: 200px;
+
+  
+
+
+  transform: scaleX(2);
+  transform: scaleY(2);
+
+  /* transform: translate(50px, 50px) rotate(120deg); */
+
+  width: 140px;
+  height: 60px;
+}
+
+.box3{
+    border: 2px solid rgb(24, 60, 236);
+    background-color: rgb(48, 181, 205);
+     margin: 300px;
+
+     transform: skew(30deg, 20deg);
+     
+    
+  
+ 
+}
+.box4{
+    height:200px ;
+    width:200px ;
+    border: 2px solid rgb(44, 49, 50);
+    background-color: rgb(229, 231, 194);
+    margin: auto;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4:hover{
+    transform:  rotate(45deg) scale(0.5)  ;
+    transform: translateY(50px);
+    
+ 
+
+    transition: all 1s linear 0s;
+    background-color: brown;
+
+
+}
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+    <div class="box1">
+        <div>Transformed element</div>
+    </div>
+
+    <div class="box2">
+             scaled element(Zoomed)
+    </div>
+
+    <div class="box3">
+            skewed element
+    </div>
+
+    <div class="box4">
+        <p>This is Box</p>
+    </div>
+    
+</body>
+</html>

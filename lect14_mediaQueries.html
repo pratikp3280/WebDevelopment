@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Tutorial is all About Media Queries</title>
+
+    <style>
+        /* .box{
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+           
+        } */
+        /* @media (max-width:600px) {
+            .box{
+                background-color: brown;
+            }
+            
+        } */
+        
+            /* we also give in the range of numbers  */
+            
+    
+         /* @media (min-width:300px) and (max-width:600px){
+            .box{
+                background-color: rgb(251, 12, 28);
+                font-size: xx-large;
+                color: chartreuse;
+            }
+            
+        } */
+
+        .container{
+            border: 2px solid red;
+            height: 210px;
+            width: 400px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            border: 2px solid rgb(23, 22, 23);
+            height: 200px;
+            width: 250px;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #boxleft{
+            display: flex;
+            flex-direction: column;
+        }
+        #box1 ,#box2 ,#box3{
+            border: 2px solid blue;
+            margin: 5px;
+            padding: 2px;  
+        }
+      
+         @media   (max-width:400px){
+            .container{
+                flex-direction: column;
+                height: 400px;
+                width: 260px;
+                position: relative;
+            }
+            
+         }
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="box">
+        Hello World
+       </div>
+       </div>
+    -->
+
+     <div class="container">
+      <div class="box" id="boxleft">
+      <div id="box1">A</div>
+      <div id="box2">B</div>
+      <div id="box3">C</div>
+
+    </div>
+    <div class="box" id="boxright">
+        <div id="boxright">
+            <img src="KLS LOGO.jfif" alt="myphoto" height="200px">
+        </div>
+
+    </div>
+      
+     </div>
+
+
+    
+</body>
+</html>

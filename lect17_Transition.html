@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Tutorial is all about CSS Transition Effects</title>
+
+    <style>
+        .box{
+            height:200px ;
+            width: 200px;
+            background-color: beige;
+            border:2px solid black ;
+            position: relative;
+
+            /* transition-property: all 2s;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            transition-delay: 0s; */
+
+            /* instead of writing all the Properties we use Shorthand  Transition */
+            /* transition: all 1s ease-in-out 0s; */
+
+            transition: width 1s, height 2s,background-color 1s ;
+
+             
+        
+        }
+        .box:hover{
+            width: 400px;
+            height: 400px;
+           
+            background-color: rgb(89, 165, 42);
+
+        }
+
+        button.highlight:hover {
+           color: #ff0000;
+           font-size: 22px;
+          
+                   }    
+                   
+         div {
+            background-color: green;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+}
+
+          div:hover {
+          background-color: blue;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+    
+    </div>
+
+    <button class="highlight">
+        submit
+
+    </button>
+
+    <div>Mouse Over Me</div>
+    
+</body>
+
+</html>

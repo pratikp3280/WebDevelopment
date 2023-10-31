@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw; ;
+    height: 75vh;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #ddbfddba 0%, #97d9e1 100%);
+}
+
+.navcontainer{
+    position: absolute;
+    width: 100vw;
+   
+    min-height: 80px;
+    /* background-color: rgba(21, 10, 115, 0.506); */
+background: #5C258D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#navlist{
+    width: 100%;
+    list-style: none;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    padding: 15px;
+}
+nav{
+    width: 100%;
+   
+}
+    
+#navlogo{
+   
+    font-size: 2.5rem;
+    color: rgb(246, 249, 249);
+    text-shadow: 3px 2px  3px #d4a4e2 , 2px 8px  3px #151513;
+    
+    
+   
+
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 241, 111);
+}
+a:hover{
+    font-size: 25px;
+    color: rgb(131, 250, 250);
+    font-weight: bolder;
+}
+
+#navitems{
+    display: flex;
+    gap: 40px;
+}
+
+.contentBox{
+    width: 98%;
+    
+    margin: auto;
+    border: 1px solid black;
+    height: 1200px;
+    position: relative;
+    overflow-x: none;
+    background: #5C258D;  /* fallback for old browsers */
+
+   background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    padding: 1.5rem;
+
+    box-shadow: 2px 0px 50px black;
+
+   
+    
+    
+
+}
+
+.item1 ,.item2{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-left: 25px;
+   
+    
+}
+
+
+.footerBox{
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(246, 246, 248, 0.94);
+    background-image: linear-gradient(to top, #7d527dd8 0%, #2c2856ec 100%);
+    color: rgb(250, 247, 247);
+    text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+     position: relative;
+     top: 10px;
+     overflow-x: none;
+}
+.footerBox p{
+    font-size: 20px;
+    
+   
+}
+.rightbox{
+    position: relative;
+    overflow: none;
+}
+.rightbox .overlay {
+    position: absolute; 
+    top: 0;
+    left:0 ;
+    height: 69%;
+    width: 100%;
+    background-color: rgba(74, 74, 74, 0.51);
+    box-sizing: border-box;
+    border-radius:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+
+    opacity: 0;
+    transition: all 0.6s linear 0s;
+
+
+}
+.rightbox .overlay:hover {
+    opacity: 1;
+
+}
+
+.rightbox img{
+    
+    position: relative;
+    border: 2px solid rgb(148, 145, 141);
+    box-sizing: border-box;
+
+    box-shadow: 2px 2px 10px 5px rgb(7, 7, 7) ;
+
+    border-radius: 20px;
+
+    margin-right: 10px;
+    margin-top: 10px;
+
+   
+}
+
+.rightbox:hover{
+    transform: scale(1.1);
+    transition: all 0.9s linear 0s;
+
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+}
+
+.leftbox h2{
+    font-size: 2rem;
+    color: rgb(31, 6, 53);
+    text-shadow: 2px 1px  5px #f3f3e6 ;
+
+}
+.Ingridients{
+    font-size: 20px;
+}
+.Ingridients h4,.Recipe h4{
+    color: rgb(245, 239, 78);
+    font-weight: bolder;
+    text-decoration: underline;
+    border: 2px groove gold;
+    box-sizing: border-box;
+    width: 100px;
+    text-align: center;
+}
+.Recipe{
+    font-size: 20px;
+}

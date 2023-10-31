@@ -1,0 +1,39 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif       sans-serif;
+}
+
+/* Using Variables in Css  */
+
+ :root{                /*  it is Html Root element Where CSS variables are being Defined  */
+       --color-Primary : #074e55 ;      /*rgb(29, 171, 184)*/
+       --Page-bg:  rgb(0, 255, 255)  ;
+       --Page-Width: 25%;
+       --Page-margin: 0;
+       --Page-font: Arial ;
+}
+
+h2{
+    color: var(--color-Primary);
+    background-color: var(--Page-bg);
+    width: var(--Page-Width);
+    margin: var(--Page-margin);
+    padding: var(--Page-margin);
+    font-family: var(--Page-font);
+}    
+
+.toggle-theme{
+    border: none;
+    outline: none;
+    font-size: inherit;
+    padding: 0.5rem 0.5rem;
+    background: var(--color-Primary);
+    color: aliceblue;
+    transition: 0.5s background;
+}
+.toggle-theme:hover{
+    background-color: rgb(32, 178, 154);
+
+}
+body{
+    background-color: hsl(180, 100%, 94%);
+}

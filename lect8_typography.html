@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This tutorial is about Css Typography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- linking the google fonts that we need ie poppins -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+       p{
+        font-style: normal; 
+
+        font-size: 15px;
+
+        font-family: 'Poppins', sans-serif;
+        
+        font-weight: 900;
+
+        line-height: 25px;
+       }
+       /* coloring */
+       #para1{
+        /* using predefined named colors */
+        color: blue;
+        background-color: yellow;
+
+       }
+       #para2{
+        /* using rgb values */
+        color: rgb(255, 0, 0);
+        background-color: rgb(0, 0, 0);
+       }
+       /* using alpha trasnperency level */
+       #para3{
+            background-color:rgba(94, 211, 15, 0.1)
+       }
+       .lastpara{
+        /* using hex values */
+        background-color: #dd7eda1f;
+        /* using hsl=hue saturation lightnes */
+        color: hsl(267, 78%, 9%);
+       }
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading"> welcome To all </h1><BR></BR>
+    <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam architecto mollitia repudiandae at quod provident rerum iure repellendus tempore nostrum ex exercitationem suscipit excepturi, consequatur assumenda. Ipsa voluptatem magni assumenda.</p>
+   <br>
+   <p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magni enim repellendus non exercitationem iusto.</p>
+   <br>
+   <p id="para3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+   <br>
+   <p class="lastpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ea distinctio id est, necessitatibus quas dolores impedit dolore. Voluptatibus dolor recusandae ex! Dignissimos, vero maiores.</p>
+</body>
+
+</html>

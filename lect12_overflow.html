@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property in CSS </title>
+
+    <style>
+        .box{
+            border: 2px solid brown;
+            width: 75vw;
+            height: 75vh;
+           /* overflow: auto;            /* it hides the the content and scrolling available only verticle */
+            overflow: scroll;          /* it hides the the content and scrolling available in verticle + Horizontal*/
+           /* overflow: hidden;      /* it hides all the the content */
+        }
+
+        .container{
+            background-color: aqua;
+            border: 10px solid rgb(8, 0, 255);
+            box-sizing: border-box;
+            overflow: auto;
+
+        }
+        .items{
+            font-size: 3rem;
+        }
+        .item1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            float: right;
+        }
+        .item2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            float: left;
+            clear: right;
+            
+        }
+        .item3{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            float: right;
+            clear: left;
+        }
+
+        
+        
+        
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quaerat nisi consectetur numquam maxime quo aliquid, dolorum exercitationem natus cumque? Doloremque praesentium quis provident nesciunt non dolores architecto eaque sint qui labore dolor, vero et aperiam natus officiis odit voluptas similique aliquam. Ad non in, vitae repudiandae illum autem sed consequuntur nostrum inventore, debitis, repellat voluptas provident. Excepturi nostrum cupiditate odio hic itaque porro reprehenderit dolorum est mollitia eaque sunt atque dolore debitis unde, quaerat necessitatibus dolores nesciunt iste eius quam quas quibusdam illo! Atque error maxime doloremque saepe sed tenetur omnis, asperiores velit, aspernatur nemo quam voluptate distinctio dolorem fugit ducimus, facere aut dolorum sit dignissimos consectetur deleniti ullam cumque est. Eveniet quis dolor quisquam officiis ea perspiciatis ullam inventore! Expedita accusamus nostrum facere rem explicabo ratione, repellendus nobis ducimus ipsa ea rerum deleniti eligendi aperiam quae totam consectetur ex dolorum hic eum quos et labore numquam perspiciatis? Incidunt fuga sapiente eveniet optio sint, officia dignissimos et molestiae quis deserunt recusandae, non odio ipsa. Inventore voluptas perferendis vel, iusto odio nesciunt, cupiditate totam sunt dolor officia impedit? Id laboriosam animi accusantium sequi nisi voluptate! Modi minima necessitatibus maiores ipsa quisquam quaerat eum sequi dolor assumenda perferendis. Praesentium, reiciendis perspiciatis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quam doloribus quis deleniti cumque delectus laborum sapiente hic mollitia vero iure, atque dolorem ea modi possimus deserunt eos provident laboriosam alias natus odit aliquid amet. Reprehenderit minus pariatur veniam harum maiores. Magni dolorem nulla suscipit maxime ea veritatis, cupiditate vero laudantium consequatur quia modi delectus, amet autem alias voluptas earum asperiores maiores facere reiciendis, id laboriosam fugit labore fuga. Labore eum ab, accusamus inventore repellendus odio nisi totam in aperiam eos. Consequuntur magnam qui impedit ad atque id ullam sint rerum velit voluptate. Veritatis quis delectus saepe corporis modi beatae magni quam perferendis commodi facere, alias incidunt dolore nihil dolores voluptates, eveniet exercitationem repudiandae nemo labore similique. Rerum, impedit culpa excepturi tenetur accusamus dolore labore iure numquam. Repudiandae aperiam deleniti nobis quam consequuntur tempora voluptatibus laborum accusantium cupiditate eligendi sapiente, obcaecati, odio corporis beatae a illum magnam possimus iste tempore, quos praesentium! Dolor molestiae placeat, commodi harum id voluptas ipsum esse unde iste velit sunt aliquam a dignissimos exercitationem? Molestias quam neque harum deleniti quasi, dicta, cumque atque inventore quia cum perspiciatis molestiae tempora quis ipsam vero quas nam rerum ipsum modi explicabo necessitatibus eius labore odit est. Provident, beatae.</p>
+    </div>
+
+    <div class="container">
+       <div class="items"> 
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+    </div>
+    </div>
+    
+</body>
+</html>

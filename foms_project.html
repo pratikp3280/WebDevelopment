@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project on Forms using Html</title>
+</head>
+<body>
+    <form>
+<!-- ********************Form TYpe 1************************** -->
+        <fieldset >
+        <legend style="text-align: center;">Form-1_Registration</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <Br></Br>
+
+        <label for="emailid">Email id:</label>
+        <input type="email" name="emailid" id="emailid">
+        <Br></Br>
+
+        <label for="phone">Phone No:</label>
+        <input type="tel" name="telephone" id="phone">
+        <Br></Br>
+
+        <label for="Occupation">Occupation:</label>
+       <select name="Occupation" id="Occupation">
+        <option value="Student">Student</option>
+        <option value="Professional">Professional</option>
+        <option value="Other">Other</option>
+       
+       </select>
+
+       <fieldset>
+        <legend>Topic Of Interest</legend>
+        <label for="checkbox1">Artificial Intelligent</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1">
+        
+        <label for="checkbox2">Machine Learning</label>
+        <input type="checkbox" name="checkbox2" id="checkbox2">
+    
+        <label for="checkbox3">Robotics</label>
+        <input type="checkbox" name="checkbox3" id="checkbox3">
+       </fieldset>
+        <br>
+
+       <label for="Textbox">Comments</label><br>
+       <textarea name="textarea" id="Textbox" cols="30" rows="10"></textarea><Br></Br>
+
+       <input type="button" value="Register">
+    </fieldset>
+    <Br></Br><Br></Br>
+
+    <!-- ***********************Form Type 2*********************** -->
+
+    <fieldset>
+       
+        <legend style="text-align: center;">Form-2_Job application</legend>
+
+        <label for="name1">Name:</label>
+        <input type="text" name="name" id="name1">
+        <Br></Br>
+
+        <label for="emailid1">Email id:</label>
+        <input type="email" name="emailid" id="emailid1">
+        <Br></Br>
+
+        <label for="phone1">Phone No:</label>
+        <input type="tel" name="telephone" id="phone1">
+        <Br></Br>
+
+        <label for="datepicker1">Birth Date:</label>
+        <input type="date" name="datepicker" id="datepicker1">
+        <Br></Br>
+
+        <label for="Occupation">Occupation:</label>
+        <select name="Occupation" id="Occupation">
+         <option value="BE">BE</option>
+         <option value="MBA">MBA</option>
+         <option value="MCA">MCA</option>
+         <option value="Diploma">Diploma</option>
+         <option value="Other">Other</option>
+        
+        </select>
+        <Br></Br>
+        <label for="file1">Resume</label>
+        <input type="file" name="Resume" id="file1">
+        <Br></Br>
+
+        <label for="counter">Experience (in Years)</label>
+        <input type="number" name="counter" id="counter" min="0" max="10">
+
+        <fieldset>
+            <legend>Skills</legend>
+            
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+            <label for="checkbox1">Artificial Intelligent</label>
+            
+            
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox2">Machine Learning</label>
+            
+            
+            <input type="checkbox" name="checkbox3" id="checkbox3">
+            <label for="checkbox3">Robotics</label>
+           
+            
+            <input type="checkbox" name="checkbox4" id="checkbox4">
+            <label for="checkbox4">Web development</label>   
+            
+            
+            <input type="checkbox" name="checkbox5" id="checkbox5">
+            <label for="checkbox5">Microsoft Office</label>
+           
+            
+            <input type="checkbox" name="checkbox6" id="checkbox6">
+            <label for="checkbox6">Data analytics</label>
+
+           </fieldset>
+            <br>
+            <label for="EducationType">Highest Education:</label>
+           <select name="EducationType" id="EducationType">
+            <option value="Phd">Phd</option>
+            <option value="PG">PG</option>
+            <option value="UG">UG</option>
+            <option value="PUC">PUC</option>
+            <option value="SSlC">SSLC</option>
+            
+           </select>
+           <Br></Br>
+           <label for="Specification">Menton Specification:</label>
+           <input type="text" name="Specification" id="Specification" placeholder="Engineering,science,Comerce,">
+
+           <fieldset>
+            <legend>Availability</legend>
+            <label for="radio1">Fulltime</label>
+            <input type="radio" name="radio" id="radio1">
+            <br>
+
+            <label for="radio2">Partime</label>
+            <input type="radio" name="radio" id="radio2">
+            <br>
+
+            <label for="radio2">intern</label>
+            <input type="radio" name="radio" id="radio2">
+            <br>
+
+            <label for="Textbox2"> Additional Comments</label><br>
+            <textarea name="textarea" id="Textbox1" cols="80" rows="10"></textarea>
+            <Br></Br>
+
+            <button type="button">submit Application</button>
+         </fieldset>
+
+    </fieldset>
+
+    <fieldset>
+        <legend style="text-align: center;">Form-3_Compex Form</legend>
+        <fieldset>
+            <legend>Personal Identification</legend>
+            <label for="name3">Name:</label>
+            <input type="text" name="name" id="name3">
+           
+            <label for="emailid3">Email id:</label>
+            <input type="email" name="emailid" id="emailid3">
+        
+    
+            <label for="phone3">Phone No:</label>
+            <input type="tel" name="telephone" id="phone3">
+     
+    
+            <label for="datepicker3">Birth Date:</label>
+            <input type="date" name="datepicker" id="datepicker3">
+            
+        </fieldset><Br></Br>
+        <fieldset>
+            <legend>Personal Adress</legend>
+            <label for="Home">Home no</label>
+            <input type="text" name="home no" id="Home">
+
+            <label for="street">Street/village</label>
+            <input type="text" name="street" id="street">
+
+            <label for="City">City</label>
+            <input type="text" name="street" id="City">
+
+            <label for="State">State</label>
+            <input type="text" name="State" id="State">
+
+            <label for="Pin">Pincode</label>
+            <input type="number" name="Pin" id="Pin">
+
+            <label for="Country">Country</label>
+            <input type="text" name="Country" id="Country">
+            
+
+        </fieldset>
+        <Br></Br>
+        <fieldset>
+            <legend>Additional info</legend>
+            <textarea name="Comments" id="" cols="80" rows="10"></textarea>
+            <br>
+            <button type="submit">submit</button>
+
+        </fieldset>
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>

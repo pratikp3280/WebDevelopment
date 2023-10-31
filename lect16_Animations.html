@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Tutorila is all about Animations in CSS</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+            
+            
+            
+            
+        }
+        .box{
+            background-color: cadetblue;
+            height: 500px;
+            width: 1200px;
+            position: absolute;
+            
+            }
+        .rectangle1{
+            width: 150px; 
+            height: 50px;
+
+            background-color: black;
+            color: rgb(249, 2, 2);
+            border: 2px solid whitesmoke;
+            border-radius: 5px;
+            position: relative;
+
+            text-align: center;
+
+           margin: 10px;
+           padding: 10px;
+
+        /* applying animation Properties */
+          /* animation-name: sliding ;
+          animation-duration: 5s;
+          animation-timing-function: ease-in-out;
+          animation-delay: 1s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-fill-mode: both;
+          animation-timing-function: linear;
+          animation-play-state: running; */
+
+          /* animation-timing-function: cubic-bezier(1, 0, 0, 1);     this is timing functin curve*/
+          
+
+          /* Shorthandly the above properties can also defined as */
+          animation: sliding-r    5s      ease-in-out     1s     infinite      alternate      running ;
+          /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+            
+        }
+        @keyframes sliding-r {
+            from{
+                top: 0;
+                left: 0;
+                
+            }
+            to{
+                top: 0;
+                left: 700px;
+
+            }
+        }
+
+        .rectangle2{
+            width: 150px; 
+            height: 50px;
+
+            background-color: black;
+            color: rgb(249, 2, 2);
+            border: 2px solid whitesmoke;
+            border-radius: 5px;
+            position: fixed;
+           
+
+            text-align: center;
+
+           margin: 10px;
+          
+           padding: 10px;
+
+           animation: sliding-l    5s      ease-in-out     1s     infinite      alternate    none   running ;
+
+        }
+
+
+        @keyframes sliding-l {
+            from{
+                top: 400px;
+                left: 700px;
+                
+            }
+            to{
+                top: 400px;
+                left: 0;
+
+            }
+        }
+
+        #circle{
+            width: 30px; 
+            height: 30px;
+
+            background-color: rgb(245, 249, 6);
+            color: rgb(249, 2, 2);
+            border: 2px solid rgb(245, 11, 11);
+            border-radius: 50px;
+            position: fixed;
+            text-align: center;
+            margin: 10px;
+            padding: 5px;
+
+            animation: circle   5s      linear     1s     infinite      alternate-reverse    none   running ;
+
+
+        }
+        @keyframes circle{
+           0%{
+                top: 15%;
+                left: 30%;
+           }
+           30%{
+                top: 15%;
+                left: 90%;
+
+           }
+           50%{
+            top: 90%;
+            left: 90%;
+           }
+           70%{
+            top: 90%;
+            left: 15%;
+
+           }
+           100%{
+                top: 15%;
+                left: 30%;
+           }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="rectangle1">
+            i am rectangle A
+        </div>
+        <div class="rectangle2">
+            i am rectangle B
+        </div>
+
+        <div>
+            <div id="circle">
+                c
+            </div>
+        </div>
+
+    </div>
+
+    
+
+</body>
+
+</html>
